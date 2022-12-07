@@ -1,8 +1,8 @@
-for (let i = 0; i < 100; i++){
+for (let i = 1; i < 101; i++){
     const fizz = "Fizz";
     const buzz = "Buzz";
     const multipleOfThree = (i % 3) === 0;
-    const multipleOfFive = (i%5) === 0;
+    const multipleOfFive = (i % 5) === 0;
     if (multipleOfThree && multipleOfFive) {
         let i = fizz + buzz;;
         console.log(i);
@@ -13,6 +13,6 @@ for (let i = 0; i < 100; i++){
         let i = fizz;
         console.log(i);
     } else {
-        console.log(i + 1);
+        console.log(i);
     }
 };
