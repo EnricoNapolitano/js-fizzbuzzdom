@@ -14,7 +14,7 @@ for (let i = 1; i < 101; i++){
     } else if (multipleOfThree) {
         daysNumber += `<li class="box"><img src="spritz.png" alt="immagine di uno spritz"></li>`;
     } else {
-        daysNumber += `<li class="box">DAY<br>${i}</li>`;
+        daysNumber += `<li class="box"><span class="day">DAY<br>${i}</span></li>`;
     }
 };
 
@@ -27,6 +27,6 @@ buttonElement.addEventListener('click', function(){
     if (inputElement.value === "sei" || inputElement.value === "6") {
         answerElement.innerHTML = `<span class="yellow">Bravo, hai indovinato! Sei Spritz! Dopo tutto non è così tanto.</span> Hai vinto ehmm... nulla. Perché dovresti vincere qualcosa? L'importante è partecipare.`;
     } else {
-        answerElement.innerHTML = `<span class="red">Mi dispiace, non hai indovinato.</span> Prova ancora!`;
+        answerElement.innerHTML = `<span class="red">Mi dispiace, non hai indovinato.</span> Passa il mouse sulle card e guarda bene dove Buzz beve il drink!`;
     }
 });

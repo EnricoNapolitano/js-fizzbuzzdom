@@ -22,6 +22,7 @@ li {
     list-style: none;
     font-size: 30px;
     line-height: 50px;
+    cursor: pointer;
 
     display: flex;
     justify-content: center;
@@ -30,6 +31,8 @@ li {
 img {
     max-width: 80%;
     height: auto;
+
+    display:none;
 }
 span {
     color: #CFFDE1;
@@ -50,11 +53,12 @@ button {
     background-color: #CFFDE1;
     width: 80px;
     height: 50px;
+    cursor: pointer;
 
     font-family: 'Press Start 2P', cursive;
 }
 .fake-form{
-    margin: 0 -12px;
+    margin: 0 -82px;
 }
 
 /* Utils */
@@ -67,7 +71,12 @@ button {
     width: 200px;  
     height: 200px;
     margin: 5px;
-    background-color: #FED049;
+    background-color: #4D8A62;
+    border: 12px solid #FED049;
+}
+span.day {
+    display:none;
+    color:#68B984;
 }
 .text {
     margin: 50px 0;
@@ -77,4 +86,15 @@ button {
 }
 .red {
     color: #ff2727;
+}
+
+/* Hover */
+.box:hover {
+    background-color: #FED049;
+}
+.box:hover img {
+    display: block;
+}
+.box:hover span.day {
+    display: inline;
 }
