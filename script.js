@@ -27,6 +27,6 @@ buttonElement.addEventListener('click', function(){
     if (inputElement.value === "sei" || inputElement.value === "6") {
         answerElement.innerHTML = `<span class="yellow">Bravo, hai indovinato! Sei Spritz! Dopo tutto non è così tanto.</span> Hai vinto ehmm... nulla. Perché dovresti vincere qualcosa? L'importante è partecipare.`;
     } else {
-        answerElement.innerHTML = `<span class="red">Mi dispiace, non hai indovinato.</span> Passa il mouse sulle card e guarda bene dove Buzz beve il drink!`;
+        answerElement.innerHTML = `<span class="red">Mi dispiace, non hai indovinato.</span> Passa il mouse sulle card e conta bene quante volte Buzz beve il drink!`;
     }
 });
