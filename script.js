@@ -1,14 +1,14 @@
 const daysWrap = document.getElementById("days-wrap");
-const spritz = "Spritz";
-const buzz = "Buzz";
-
+const buttonElement = document.querySelector("button");
+const inputElement = document.querySelector("input");
+const answerElement = document.getElementById("answer");
 let daysNumber = `<ul>`;
 
 for (let i = 1; i < 101; i++){
     const multipleOfFive = (i % 5) === 0;
     const multipleOfThree = (i % 3) === 0;
     if (multipleOfThree && multipleOfFive) {
-       daysNumber += `<li class="box"><img src="spritz-buzz.png" alt="immagine di Buzz Lightyear che beve uno spritz"></li>`;
+        daysNumber += `<li class="box"><img src="spritz-buzz.png" alt="immagine di Buzz Lightyear che beve uno spritz"></li>`;
     } else if (multipleOfFive) {
         daysNumber += `<li class="box"><img src="buzz.png" alt="immagine di Buzz Lightyear"></li>`;
     } else if (multipleOfThree) {
@@ -21,4 +21,12 @@ for (let i = 1; i < 101; i++){
 daysNumber += `</ul>`;
 
 daysWrap.innerHTML = daysNumber;
-console.log(daysWrap);
+
+// input interaction
+buttonElement.addEventListener('click', function(){
+    if (inputElement.value === "sei" || inputElement.value === "6") {
+        answerElement.innerHTML = `<span class="yellow">Bravo, hai indovinato! Sei Spritz! Dopo tutto non è così tanto.</span> Hai vinto ehmm... nulla. Perché dovresti vincere qualcosa? L'importante è partecipare.`;
+    } else {
+        answerElement.innerHTML = `<span class="red">Mi dispiace, non hai indovinato.</span> Prova ancora!`;
+    }
+});

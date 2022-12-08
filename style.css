@@ -43,7 +43,7 @@ input {
     min-width: 70%;
     height: 50px;
     padding-left: 15px;
-    
+
     font-family: 'Press Start 2P', cursive;
 }
 button {
@@ -52,6 +52,9 @@ button {
     height: 50px;
 
     font-family: 'Press Start 2P', cursive;
+}
+.fake-form{
+    margin: 0 -12px;
 }
 
 /* Utils */
@@ -68,4 +71,10 @@ button {
 }
 .text {
     margin: 50px 0;
+}
+.yellow {
+    color: #FED049;
+}
+.red {
+    color: #ff2727;
 }
