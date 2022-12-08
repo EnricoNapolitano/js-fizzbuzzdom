@@ -21,6 +21,7 @@ ul {
 li {
     list-style: none;
     font-size: 30px;
+    line-height: 50px;
 
     display: flex;
     justify-content: center;
@@ -32,6 +33,25 @@ img {
 }
 span {
     color: #CFFDE1;
+}
+span:last-child {
+    font-size: 1.6rem;
+    display: block;
+    padding-top: 18px;
+}
+input {
+    min-width: 70%;
+    height: 50px;
+    padding-left: 15px;
+    
+    font-family: 'Press Start 2P', cursive;
+}
+button {
+    background-color: #CFFDE1;
+    width: 80px;
+    height: 50px;
+
+    font-family: 'Press Start 2P', cursive;
 }
 
 /* Utils */

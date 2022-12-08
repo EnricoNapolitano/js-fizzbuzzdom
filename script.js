@@ -14,7 +14,7 @@ for (let i = 1; i < 101; i++){
     } else if (multipleOfThree) {
         daysNumber += `<li class="box"><img src="spritz.png" alt="immagine di uno spritz"></li>`;
     } else {
-        daysNumber += `<li class="box">${i}</li>`;
+        daysNumber += `<li class="box">DAY<br>${i}</li>`;
     }
 };
 
