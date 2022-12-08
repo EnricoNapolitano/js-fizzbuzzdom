@@ -1,0 +1,51 @@
+/* Generics */
+body {
+    background-color: #68B984; 
+    font-family: 'Press Start 2P', cursive;
+    color: #CFFDE1;
+}
+h1 {
+    font-size: 3rem;
+}
+p {
+    color: #3D5656;
+    line-height: 35px;
+    font-size: 1.3rem;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+li {
+    list-style: none;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    max-width: 80%;
+    height: auto;
+}
+span {
+    color: #CFFDE1;
+}
+
+/* Utils */
+.container {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.box {
+    width: 200px;  
+    height: 200px;
+    margin: 5px;
+    background-color: #FED049;
+}
+.text {
+    margin: 50px 0;
+}

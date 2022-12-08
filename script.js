@@ -1,21 +1,24 @@
-const containerElement = document.getElementById("container");
-const fizz = "Fizz";
+const daysWrap = document.getElementById("days-wrap");
+const spritz = "Spritz";
 const buzz = "Buzz";
-let numbers = '';
+
+let daysNumber = `<ul>`;
 
 for (let i = 1; i < 101; i++){
     const multipleOfFive = (i % 5) === 0;
     const multipleOfThree = (i % 3) === 0;
     if (multipleOfThree && multipleOfFive) {
-        numbers += " " + fizz + buzz;
+       daysNumber += `<li class="box"><img src="spritz-buzz.png" alt="immagine di Buzz Lightyear che beve uno spritz"></li>`;
     } else if (multipleOfFive) {
-        numbers += " " + buzz;
+        daysNumber += `<li class="box"><img src="buzz.png" alt="immagine di Buzz Lightyear"></li>`;
     } else if (multipleOfThree) {
-        numbers += " " + fizz;
+        daysNumber += `<li class="box"><img src="spritz.png" alt="immagine di uno spritz"></li>`;
     } else {
-        numbers += " " + i;
+        daysNumber += `<li class="box">${i}</li>`;
     }
 };
 
-containerElement.innerText = numbers;
-console.log(numbers);
+daysNumber += `</ul>`;
+
+daysWrap.innerHTML = daysNumber;
+console.log(daysWrap);
