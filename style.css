@@ -79,6 +79,9 @@ span.day {
 .text {
     margin: 50px 0;
 }
+.bg-yellow {
+    background-color: #FED049;
+}
 .yellow {
     color: #FED049;
 }
