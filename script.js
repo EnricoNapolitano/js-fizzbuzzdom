@@ -24,8 +24,12 @@ daysWrap.innerHTML = daysNumber;
 
 // input interaction
 buttonElement.addEventListener('click', function(){
-    if (inputElement.value === "sei" || inputElement.value === "6") {
-        answerElement.innerHTML = `<span class="yellow">Bravo, hai indovinato! Sei Spritz! Dopo tutto non è così tanto.</span> Hai vinto ehmm... nulla. Perché dovresti vincere qualcosa? L'importante è partecipare.`;
+    /*
+    for design reasons I wanted to guarantee maximum expression to the user
+    when filling out the form and not limit his experience choosing to a set range of numbers.
+    */
+    if (inputElement.value.includes("sei") || inputElement.value.includes("SEI") || inputElement.value.includes("6")) {
+        answerElement.innerHTML = `<span class="yellow">Bravo, hai indovinato! SEI SPRITZ! Dopo tutto non è così tanto.</span> Hai vinto ehmm... nulla. Perché dovresti vincere qualcosa? L'importante è partecipare.`;
     } else {
         answerElement.innerHTML = `<span class="red">Mi dispiace, non hai indovinato.</span> Passa il mouse sulle card e conta bene quante volte Buzz beve il drink!`;
     }

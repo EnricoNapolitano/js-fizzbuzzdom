@@ -46,6 +46,7 @@ input {
     min-width: 70%;
     height: 50px;
     padding-left: 15px;
+    border: 2px solid black;
 
     font-family: 'Press Start 2P', cursive;
 }
@@ -56,9 +57,6 @@ button {
     cursor: pointer;
 
     font-family: 'Press Start 2P', cursive;
-}
-.fake-form{
-    margin: 0 -82px;
 }
 
 /* Utils */
@@ -97,4 +95,15 @@ span.day {
 }
 .box:hover span.day {
     display: inline;
+}
+button:hover {
+    background-color: #A2CCB2;
+}
+
+/* Media query */
+/* custom screen size */
+@media screen and (min-width: 920px) {
+    .fake-form {
+        margin: 0 -82px;
+    }
 }
